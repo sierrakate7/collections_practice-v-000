@@ -3,8 +3,11 @@ def sort_array_asc(array)
 end 
 
 def sort_array_desc(array)
-  array.sort.reverse
-end 
+  array.sort do | left, right|
+    right <=> left
+  end
+end
+
 
 def sort_array_char_count
   arrray.sort do 
